@@ -1,6 +1,6 @@
 (function () {
     // setting language
-    sessionStorage.setItem('language', 'eng');
+    sessionStorage.setItem('language', 'kor');
 
     switch(sessionStorage.getItem('language')) {
         case 'eng':
@@ -17,7 +17,7 @@
     }
     
     function setLanguage(param) {
-        let filePath  = '../src/data/' + param + '.json';
+        let filePath  = './data/' + param + '.json';
 
         $.getJSON(filePath, function(data) {
             let resultData = data;
